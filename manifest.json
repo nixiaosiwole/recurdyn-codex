@@ -1,0 +1,136 @@
+{
+  "name": "recurdyn-codex",
+  "version": "0.2",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "f8165349816f1425fa29eff542ff5bd902c3b1b3de5cab6acde6173db542c4b2",
+      "bytes": 61
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "48ef860ff809f7e263dbd29902fdd7849edf8c0ede8d014a6bba671c47930e37",
+      "bytes": 1579
+    },
+    {
+      "path": "README.md",
+      "sha256": "f87e2d75ea9b5349042f79fd0c9f2836685be9d90d56d62f832bf7c1e4fef277",
+      "bytes": 8645
+    },
+    {
+      "path": "examples/job.template.json",
+      "sha256": "ca1c92d45787c2e248a05b48a0320f1f2b5baf17a43cc72a9187a9cdfa0d9fe4",
+      "bytes": 155
+    },
+    {
+      "path": "examples/modeling/hinge_motion_spring.py",
+      "sha256": "e3ea34d802e0bb0d6c7f28da40de4a3e9c95af3f65c2956e3b33a159af177468",
+      "bytes": 8990
+    },
+    {
+      "path": "examples/modeling/nested_system.py",
+      "sha256": "0e46c6cb66fb2034ee45373f697f893b1c5dcb7a3aa85fada6f4fbebd3f5e2d3",
+      "bytes": 3599
+    },
+    {
+      "path": "examples/modeling/relations.spec.json",
+      "sha256": "4890a1937207e0ff9e8e6cc2d3ffe9d42bdecc4b7533b0ad423e7b76c62caab2",
+      "bytes": 1383
+    },
+    {
+      "path": "initialize.ps1",
+      "sha256": "abc231f061169b004549214eade1b8e6f735482e77d3f5c7d4f1b8080fef130f",
+      "bytes": 7202
+    },
+    {
+      "path": "rd.ps1",
+      "sha256": "6b08b2d4f5e6f84fdc8fcaac0fd7c044f3552ca19b0590a27fcf15de2999e848",
+      "bytes": 636
+    },
+    {
+      "path": "recurdyn-config.json",
+      "sha256": "0dbba8c54862eea64fe78b01cb6023e36ebbb2f44139cc3370a151650e099645",
+      "bytes": 272
+    },
+    {
+      "path": "recurdyn_control/__init__.py",
+      "sha256": "92af14e48090bf4de29584dd1c0abe0fbcf7169d07ee2bda4becc086df98e76d",
+      "bytes": 145
+    },
+    {
+      "path": "recurdyn_control/__main__.py",
+      "sha256": "34ff1aaabd4cc4bde9c4840835bfafee9e6fdf84309a6c714cce24e950876d51",
+      "bytes": 12370
+    },
+    {
+      "path": "recurdyn_control/demo.py",
+      "sha256": "cd82393e04a50d77b25c05d6ebae6494e1de8e582758ca07cd994942c7f3d498",
+      "bytes": 2976
+    },
+    {
+      "path": "recurdyn_control/docs.py",
+      "sha256": "7039da4e20bd7866df108afda588d92ef2aa2a8f2d654655ea4a1492b9228963",
+      "bytes": 16475
+    },
+    {
+      "path": "recurdyn_control/hybrid.py",
+      "sha256": "eaf700548b814e054b06823e82c984cba1b6e6db3d4cb3a7cf48350603da9311",
+      "bytes": 14318
+    },
+    {
+      "path": "recurdyn_control/rdx.py",
+      "sha256": "473b73f440be61bd2dda91ca8d169b48f6f6fb29bf4c86825b17655ab4db1782",
+      "bytes": 20458
+    },
+    {
+      "path": "recurdyn_control/runtime.py",
+      "sha256": "f91f076d9c0e461072e32a3ed06667b9d3422c5505131f30fe19483f49d558c8",
+      "bytes": 4959
+    },
+    {
+      "path": "recurdyn_control/session.py",
+      "sha256": "f14417fc0ca04bcc53149ff1c06877b0d110f5cc839ecdfafd294aa20bf53eeb",
+      "bytes": 14489
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "ed00efb665fe15e46cab0d70dfa567bacc06dfec31ecb4fdc12771de4677bf28",
+      "bytes": 13
+    },
+    {
+      "path": "skills/recurdyn-control/SKILL.md",
+      "sha256": "de9f4aa1c21901fb7576804ee70de6eba433a311702798c29c7fe2e74640f4e8",
+      "bytes": 5531
+    },
+    {
+      "path": "skills/recurdyn-control/agents/openai.yaml",
+      "sha256": "7198cca92efe05bd05b8554e6144e1ba65593cbebe49d90aa2e66f2544d17818",
+      "bytes": 304
+    },
+    {
+      "path": "skills/recurdyn-control/references/commands.md",
+      "sha256": "efd1b6dd4c46c0411fc10e4493706bc4e168277c4690576d6b1f9029c140aec7",
+      "bytes": 4129
+    },
+    {
+      "path": "skills/recurdyn-control/references/model-building.md",
+      "sha256": "ab7b332b4a824986887c01b8aca363c33b34025a19046bcf85d6566a4b883089",
+      "bytes": 7087
+    }
+  ],
+  "tested_baseline": {
+    "os": "Windows 64-bit",
+    "python": "3.10.13",
+    "RecurDyn": "2024",
+    "ProcessNet": "10.2.45533.2024"
+  },
+  "runtime_requirements": [
+    "Local RecurDyn installation and license",
+    "64-bit Windows Python 3.10+",
+    "pywin32"
+  ],
+  "entrypoint": "rd.ps1",
+  "initialization": "initialize.ps1",
+  "skill": "skills/recurdyn-control/SKILL.md",
+  "second_machine_validation": "not performed"
+}

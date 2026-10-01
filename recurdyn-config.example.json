@@ -1,0 +1,12 @@
+{
+  "install_dir": "",
+  "python_executable": "",
+  "conda_environment": null,
+  "connect_timeout_seconds": 90,
+  "documentation": {
+    "recurdyn_help_index": "",
+    "processnet_chm": "",
+    "examples_root": "",
+    "processnet_html_dir": ".reference/processnet"
+  }
+}

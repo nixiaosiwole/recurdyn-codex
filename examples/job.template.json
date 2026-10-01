@@ -1,0 +1,8 @@
+{
+  "model": "C:\\Models\\your_model.rdyn",
+  "output_dir": "runs/my_first_job",
+  "parameters": {},
+  "end_time": 1.0,
+  "steps": 100,
+  "channels": []
+}

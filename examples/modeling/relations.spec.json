@@ -1,0 +1,22 @@
+{
+  "purpose": "Reviewable example specification for Codex; this is not a general JSON-to-model compiler",
+  "script": "examples/modeling/hinge_motion_spring.py",
+  "units": {"length": "m", "mass": "kg", "time": "s", "motion_angle": "rad"},
+  "gravity": [0, 0, 0],
+  "bodies": [
+    {"name": "Ground", "fixed": true},
+    {"name": "Link", "geometry": "uniform_box", "dimensions": [0.2, 0.04, 0.04],
+     "center_in_root": [0.1, 0, 0], "mass": 0.25}
+  ],
+  "joint": {"name": "Hinge", "type": "revolute", "base_body": "Ground", "action_body": "Link",
+            "pivot_in_root": [0, 0, 0], "axis_in_root": [0, 0, 1]},
+  "motion": {"joint": "Hinge", "condition": "displacement", "expression": "0.2*TIME", "angle_unit": "rad"},
+  "force": {"name": "Spring", "type": "linear_spring_damper", "base_body": "Ground", "action_body": "Link",
+            "base_point_in_root": [0, 1, 0], "action_point_in_root": [0.2, 0, 0],
+            "stiffness_parameter": "ScaledK", "damping": 1, "free_length": "sqrt(1.04)"},
+  "parameters": {"K": 100, "ScaledK": "2*K"},
+  "simulation": {"end_time": 0.2, "output_steps": 20},
+  "verification": ["connector endpoints", "motion expression reference", "effective stiffness",
+                   "actual final time", "x=0.1*cos(0.2*t), y=0.1*sin(0.2*t)"],
+  "verification_limit": "Prescribed trajectory does not independently verify spring reaction force"
+}

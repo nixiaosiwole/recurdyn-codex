@@ -1,0 +1,7 @@
+.cache/
+.reference/
+runs/
+__pycache__/
+.pytest_cache/
+.venv/
+/recurdyn-config.json

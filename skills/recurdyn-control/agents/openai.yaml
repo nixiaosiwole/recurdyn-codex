@@ -1,0 +1,4 @@
+interface:
+  display_name: "RecurDyn Python 控制"
+  short_description: "查本机官方接口和示例，按关系写 RecurDyn 建模代码，读模型并仿真"
+  default_prompt: "使用 $recurdyn-control，根据我描述的模型关系查本机 SDK 和帮助，编写建模代码并验证结果。"
